@@ -1,0 +1,14 @@
+spring:
+  datasource: # hikari
+    driver-class-name: com.mysql.cj.jdbc.Driver # mysql 8
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/springboot_test?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+# 配置jpa  PhysicalNamingStrategyStandardImpl小驼峰  xx_yy_xx
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+    database: mysql

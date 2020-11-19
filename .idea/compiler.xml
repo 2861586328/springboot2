@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo04mybatis" />
+        <module name="demo01yml" />
+        <module name="demo02junit" />
+        <module name="demo07springmvc" />
+        <module name="demo06redis" />
+        <module name="demo03hikari" />
+        <module name="demo05jpa2" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo05jpa" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo01yml" options="-parameters" />
+      <module name="demo02junit" options="-parameters" />
+      <module name="demo04mybatis" options="-parameters" />
+      <module name="demo05jpa" options="-parameters" />
+      <module name="demo05jpa2" options="-parameters" />
+      <module name="demo06redis" options="-parameters" />
+      <module name="demo07springmvc" options="-parameters" />
+    </option>
+  </component>
+</project>
